@@ -2,19 +2,18 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "google-antigravity/gemini-3-flash",
-        "primaryAccount": "zinchukandrii1993",
+        "primary": "openai-codex/gpt-5.2",
+        "primaryAccount": "openai-codex",
         "fallbacks": [
+          "google-antigravity/gemini-3-flash",
           "google-antigravity/claude-sonnet-4-5-thinking",
           "google-antigravity/gemini-3-pro-high",
           "google-antigravity/gemini-3-pro-low",
-          "google-antigravity/gemini-3-flash",
           "copilot-proxy/claude-opus-4.5",
           "copilot-proxy/claude-sonnet-4.5",
           "copilot-proxy/gpt-5.2",
           "copilot-proxy/gpt-5.2-codex",
           "copilot-proxy/gpt-5-mini",
-          "openai-codex/gpt-5.2",
           "openai-codex/gpt-5.2-codex",
           "github-copilot/gpt-5-mini"
         ]
@@ -49,7 +48,13 @@
       "subagents": {
         "maxConcurrent": 8
       },
-      "timeoutSeconds": 60
+      "timeoutSeconds": 60,
+      "rateLimits": {
+        "openai-codex": {
+          "requestsPerMinute": 60,
+          "tokensPerMinute": 150000
+        }
+      }
     }
   }
 }
