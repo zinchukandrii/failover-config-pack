@@ -1,0 +1,55 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "google-antigravity/gemini-3-flash",
+        "primaryAccount": "zinchukandrii1993",
+        "fallbacks": [
+          "google-antigravity/claude-sonnet-4-5-thinking",
+          "google-antigravity/gemini-3-pro-high",
+          "google-antigravity/gemini-3-pro-low",
+          "google-antigravity/gemini-3-flash",
+          "copilot-proxy/claude-opus-4.5",
+          "copilot-proxy/claude-sonnet-4.5",
+          "copilot-proxy/gpt-5.2",
+          "copilot-proxy/gpt-5.2-codex",
+          "copilot-proxy/gpt-5-mini",
+          "openai-codex/gpt-5.2",
+          "openai-codex/gpt-5.2-codex",
+          "github-copilot/gpt-5-mini"
+        ]
+      },
+      "models": {
+        "google-gemini-cli/gemini-3-pro-preview": {},
+        "google-gemini-cli/gemini-3-flash-preview": {},
+        "google-antigravity/claude-opus-4-5-thinking": {},
+        "google-antigravity/gemini-3-pro-preview": {},
+        "copilot-proxy/gpt-5.2": {},
+        "copilot-proxy/gpt-5.2-codex": {},
+        "copilot-proxy/gpt-5.1": {},
+        "copilot-proxy/gpt-5.1-codex": {},
+        "copilot-proxy/gpt-5.1-codex-max": {},
+        "copilot-proxy/gpt-5-mini": {},
+        "copilot-proxy/claude-opus-4.5": {},
+        "copilot-proxy/claude-sonnet-4.5": {},
+        "copilot-proxy/claude-haiku-4.5": {},
+        "copilot-proxy/gemini-3-pro": {},
+        "copilot-proxy/gemini-3-flash": {},
+        "copilot-proxy/grok-code-fast-1": {},
+        "github-copilot/gpt-5-mini": {},
+        "openai-codex/gpt-5.2-codex": {},
+        "openai-codex/gpt-5.2": {},
+        "google-antigravity/gemini-3-flash": {},
+        "google-antigravity/gemini-3-pro-low": {},
+        "google-antigravity/gemini-3-pro-high": {},
+        "google-antigravity/claude-sonnet-4-5-thinking": {}
+      },
+      "workspace": "/home/ubuntu/clawd",
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      },
+      "timeoutSeconds": 60
+    }
+  }
+}
