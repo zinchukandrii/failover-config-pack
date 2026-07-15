@@ -1,0 +1,5 @@
+{
+  "provider-a/quality": "timeout",
+  "provider-b/balanced": "rate_limited",
+  "provider-c/fast": "success"
+}

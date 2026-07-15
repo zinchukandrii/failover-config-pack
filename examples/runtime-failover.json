@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "policy": {
+    "request_timeout_seconds": 15,
+    "retryable_outcomes": ["timeout", "rate_limited", "unavailable"]
+  },
+  "routes": [
+    {
+      "id": "quality",
+      "candidates": [
+        {"id": "provider-a/quality", "tier": 1},
+        {"id": "provider-b/balanced", "tier": 2},
+        {"id": "provider-c/fast", "tier": 3}
+      ]
+    },
+    {
+      "id": "batch",
+      "candidates": [
+        {"id": "provider-c/fast", "tier": 1},
+        {"id": "provider-b/balanced", "tier": 2}
+      ]
+    }
+  ]
+}
